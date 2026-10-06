@@ -1,26 +1,67 @@
 {
-  "registry_id": "EIL-001-INDEPENDENT-VERIFICATION-REGISTRY-v1.0",
+  "registry_id": "EIL-001-INDEPENDENT-VERIFICATION-REGISTRY-v1.1",
   "constitutional_baseline": "EIL-001 Constitutional Baseline v1.0",
-  "implementation_candidate_sha256": "f4f1e93db44fd1cb9c4834ba4973f7834e3972f832c547437627db7ab176f62b",
+  "integration_rule": "KCN → EIL NON-PROMOTION BOUNDARY",
+  "status": "CONSTITUTIONAL REQUIREMENT / FROZEN",
+  "implementation_status": "TO_BE_VERIFIED",
   "verification_status": "NOT_ESTABLISHED",
   "qualification_status": "NOT_ESTABLISHED",
   "human_ratification_status": "NOT_ESTABLISHED",
   "authority_status": "HUMAN_ONLY",
   "claims": [
-    {"id":"EIL-C-001","proposition":"Historical epistemic events cannot be silently modified.","status":"NOT_ESTABLISHED"},
-    {"id":"EIL-C-002","proposition":"Current epistemic state can be independently reconstructed from historical events.","status":"NOT_ESTABLISHED"},
-    {"id":"EIL-C-003","proposition":"Evidence cannot silently migrate between claims.","status":"NOT_ESTABLISHED"},
-    {"id":"EIL-C-004","proposition":"Unsupported evidence-level promotion is rejected.","status":"NOT_ESTABLISHED"},
-    {"id":"EIL-C-005","proposition":"Negative results remain preserved and cannot be silently deleted, suppressed, or replaced.","status":"NOT_ESTABLISHED"},
-    {"id":"EIL-C-006","proposition":"Qualification cannot flow backward and retroactively validate the evidence used to obtain that qualification.","status":"NOT_ESTABLISHED"},
-    {"id":"EIL-C-007","proposition":"AI confidence cannot independently authorize an epistemic transition.","status":"NOT_ESTABLISHED"},
-    {"id":"EIL-C-008","proposition":"Competing explanations cannot be silently suppressed.","status":"NOT_ESTABLISHED"}
+    {
+      "id": "EIL-KCN-001",
+      "proposition": "KCN knowledge ingestion cannot increase evidence, verification, qualification, or authority state.",
+      "status": "NOT_ESTABLISHED"
+    },
+    {
+      "id": "EIL-KCN-002",
+      "proposition": "Source identity, reputation, confidence, or provenance cannot itself determine epistemic level.",
+      "status": "NOT_ESTABLISHED"
+    },
+    {
+      "id": "EIL-KCN-003",
+      "proposition": "A later experiment or verification event cannot overwrite the original historical claim record.",
+      "status": "NOT_ESTABLISHED"
+    },
+    {
+      "id": "EIL-KCN-004",
+      "proposition": "New evidence is linked to the claim it bears upon and cannot replace the historical claim.",
+      "status": "NOT_ESTABLISHED"
+    },
+    {
+      "id": "EIL-KCN-005",
+      "proposition": "Repeated, duplicated, or correlated claims cannot independently increase evidence level.",
+      "status": "NOT_ESTABLISHED"
+    },
+    {
+      "id": "EIL-KCN-006",
+      "proposition": "AI confidence, consensus, scoring, or evaluator output cannot independently authorize epistemic promotion.",
+      "status": "NOT_ESTABLISHED"
+    },
+    {
+      "id": "EIL-KCN-007",
+      "proposition": "Evidence from KCN Economics, SCARS, or another subsystem establishes evidence only within its demonstrated scope.",
+      "status": "NOT_ESTABLISHED"
+    },
+    {
+      "id": "EIL-KCN-008",
+      "proposition": "Qualification cannot be inferred from evidence existence and requires the defined qualification pathway.",
+      "status": "NOT_ESTABLISHED"
+    },
+    {
+      "id": "EIL-KCN-009",
+      "proposition": "No ingestion, verification, or qualification mechanism independently creates human authority.",
+      "status": "NOT_ESTABLISHED"
+    }
   ],
   "rules": [
-    "The frozen candidate is read-only.",
-    "The verifier must not rely exclusively on the original local test harness or fixtures.",
-    "A failed verification is preserved as a finding; it is not repaired in-place.",
-    "Verification evidence is distinct from qualification and human ratification.",
-    "A source-hash mismatch aborts execution and prevents lineage merging."
+    "Knowledge ingestion creates a claim record, not evidence.",
+    "Direct E0→E1/E2/E3/E4/E5 promotion without required evidence events must be rejected.",
+    "Direct promotion to VERIFIED, QUALIFIED, or AUTHORIZED without required events must be rejected.",
+    "Indirect promotion through repetition, confidence, consensus, reputation, semantic similarity, execution success, prior qualification, imported labels, or downstream reinterpretation must be rejected.",
+    "A failed verification is preserved as a finding and is not repaired in-place.",
+    "Verification evidence remains distinct from qualification and human ratification.",
+    "Human authority remains HUMAN_ONLY."
   ]
 }
