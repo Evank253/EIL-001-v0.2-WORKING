@@ -1,0 +1,26 @@
+{
+  "registry_id": "EIL-001-INDEPENDENT-VERIFICATION-REGISTRY-v1.0",
+  "constitutional_baseline": "EIL-001 Constitutional Baseline v1.0",
+  "implementation_candidate_sha256": "f4f1e93db44fd1cb9c4834ba4973f7834e3972f832c547437627db7ab176f62b",
+  "verification_status": "NOT_ESTABLISHED",
+  "qualification_status": "NOT_ESTABLISHED",
+  "human_ratification_status": "NOT_ESTABLISHED",
+  "authority_status": "HUMAN_ONLY",
+  "claims": [
+    {"id":"EIL-C-001","proposition":"Historical epistemic events cannot be silently modified.","status":"NOT_ESTABLISHED"},
+    {"id":"EIL-C-002","proposition":"Current epistemic state can be independently reconstructed from historical events.","status":"NOT_ESTABLISHED"},
+    {"id":"EIL-C-003","proposition":"Evidence cannot silently migrate between claims.","status":"NOT_ESTABLISHED"},
+    {"id":"EIL-C-004","proposition":"Unsupported evidence-level promotion is rejected.","status":"NOT_ESTABLISHED"},
+    {"id":"EIL-C-005","proposition":"Negative results remain preserved and cannot be silently deleted, suppressed, or replaced.","status":"NOT_ESTABLISHED"},
+    {"id":"EIL-C-006","proposition":"Qualification cannot flow backward and retroactively validate the evidence used to obtain that qualification.","status":"NOT_ESTABLISHED"},
+    {"id":"EIL-C-007","proposition":"AI confidence cannot independently authorize an epistemic transition.","status":"NOT_ESTABLISHED"},
+    {"id":"EIL-C-008","proposition":"Competing explanations cannot be silently suppressed.","status":"NOT_ESTABLISHED"}
+  ],
+  "rules": [
+    "The frozen candidate is read-only.",
+    "The verifier must not rely exclusively on the original local test harness or fixtures.",
+    "A failed verification is preserved as a finding; it is not repaired in-place.",
+    "Verification evidence is distinct from qualification and human ratification.",
+    "A source-hash mismatch aborts execution and prevents lineage merging."
+  ]
+}
